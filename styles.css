@@ -267,6 +267,28 @@ body.lb-disable-scrolling {
   opacity: 1;
 }
 
+/* Villain Section */
+
+.villain-section {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 75%;
+	margin: auto;
+	animation: show 1.3s forwards;
+	visibility: hidden;
+}
+
+.villain-section div {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.villain-section .villain-logo {
+	width: 93%;
+	max-width: 800px;
+}
+
 /* Animations */
 
 @keyframes typing {
