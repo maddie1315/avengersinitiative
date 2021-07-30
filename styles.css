@@ -295,6 +295,47 @@ body.lb-disable-scrolling {
 	font-size: 2.7em;
 }
 
+/* footer */
+
+.nav-menu {
+	padding: 0;
+	margin: 10% auto;
+}
+
+.nav-icon {
+	max-width: 10vw;
+}
+
+.nav-menu li{
+    width: 230px;
+    height: 230px;
+    border: 10px solid #f6f6f6;
+    overflow: hidden;
+    position: relative;
+    float:left;
+    background: #fff;
+    margin-right: 4px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    border-radius: 125px;
+    transition: all 400ms linear;
+}
+
+.nav-menu li:hover{
+    border-color: #333;
+    z-index: 999;
+    transform: scale(1.1);
+}
+.nav-menu li:hover .nav-icon{
+    color: #000;
+    font-size: 60px;
+    text-shadow: 0px 0px 1px #000;
+    animation: moveFromBottom 300ms ease;
+}
+.nav-menu li:hover .nav-main{
+    color: #000;
+    animation: moveFromBottom 500ms ease;
+}
+
 
 /* Animations */
 
