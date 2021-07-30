@@ -272,6 +272,7 @@ body.lb-disable-scrolling {
 .villain-section {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
 	align-items: center;
 	width: 75%;
 	margin: auto;
@@ -282,12 +283,18 @@ body.lb-disable-scrolling {
 .villain-section div {
 	width: 50%;
 	margin: 0 auto;
+	padding: 5%;
 }
 
 .villain-section .villain-logo {
-	width: 93%;
+	width: 98%;
 	max-width: 800px;
 }
+
+.villain-heading {
+	font-size: 2.7em;
+}
+
 
 /* Animations */
 
@@ -312,5 +319,21 @@ body.lb-disable-scrolling {
 	.hero-section div {
 		width: 33%;
 		max-width: 400px;
+	}
+
+	.villain-section {
+		flex-wrap: nowrap;
+		flex-direction: row;
+		width: 85%;
+	}
+
+	.villain-heading {
+		font-size: 3.5em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.villain-section div {
+		padding: 3%;
 	}
 }
