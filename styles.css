@@ -40,7 +40,8 @@ h6 {
 
 /* Hero Page */
 
-.hero-section {
+.hero-section,
+.icons {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -50,8 +51,16 @@ h6 {
 	visibility: hidden;
 }
 
+.villain-section {
+	width: 75%;
+	margin: auto;
+	animation: show 1.3s forwards;
+	visibility: hidden;
+}
+
 .hero-section div,
-.villain-section div {
+.villain-section div,
+figure {
 	width: 50%;
 	margin: 0 auto;
 }
@@ -59,6 +68,11 @@ h6 {
 .hero-section .hero-logo,
 .villain-section .villain-logo {
 	width: 93%;
+	max-width: 800px;
+}
+
+figure img {
+	width: 100%;
 	max-width: 800px;
 }
 
@@ -297,7 +311,13 @@ body.lb-disable-scrolling {
 /* Media Queries - 750px */
 
 @media (min-width: 750px) {
-	.hero-section div {
+	.icons {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.hero-section div,
+	figure {
 		width: 33%;
 		max-width: 400px;
 	}
