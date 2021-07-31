@@ -8,16 +8,24 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+@font-face {
+	font-family: Technology;
+	src: url('technology_bold.ttf');
+}
+
 body {
 	background-image: url('images/mobile_background.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 100vh;
+	color: white;
+	font-family: Technology, cursive;
 }
 
-@font-face {
-	font-family: Technology;
-	src: url('technology_bold.ttf');
+.login-page {
+	background-image: url('images/avenger_screen.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 h1,
@@ -26,8 +34,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Technology, cursive;
-	color: white;
 	font-size: 3.5em;
 	text-align: center;
 	padding: 3%;
@@ -74,6 +80,39 @@ figure {
 figure img {
 	width: 100%;
 	max-width: 800px;
+}
+
+/* Login Page */
+
+.fury {
+	animation-fill-mode: backwards;
+	animation-delay: 1.3s;
+}
+
+form {
+	font-size: 2em;
+	width: 50%;
+	margin: 10px auto;
+	text-align: center;
+}
+
+#pswd {
+	display: block;
+	size: 30;
+	height: 50px;
+}
+
+input {
+	margin: 10px auto;
+}
+
+#submit {
+	font-family: Technology, cursive;
+	color: white;
+	font-size: 1em;
+	padding: 2%;
+	background-color: black;
+	border: .5px solid gray;
 }
 
 /* Lightbox Styling */
@@ -305,6 +344,10 @@ body.lb-disable-scrolling {
 @media (min-width: 550px) {
 	.villain-section {
 		display: flex;
+	}
+
+	#pswd {
+		width: 275px;
 	}
 }
 
