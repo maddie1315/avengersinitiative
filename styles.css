@@ -332,7 +332,7 @@ body.lb-disable-scrolling {
 	margin: auto;
 	animation: show 1.3s forwards;
 	visibility: hidden;
-	padding-bottom: 20vh;
+	/* padding-bottom: 50vh; */
 }
 
 .villain-section div {
@@ -354,6 +354,7 @@ body.lb-disable-scrolling {
 
 footer {
 	background-color: rgba(0,0,0,.8);
+	margin-top: 30vh; 
 }
 
 .nav-menu {
