@@ -50,12 +50,14 @@ h6 {
 	visibility: hidden;
 }
 
-.hero-section div {
+.hero-section div,
+.villain-section div {
 	width: 50%;
 	margin: 0 auto;
 }
 
-.hero-section .hero-logo {
+.hero-section .hero-logo,
+.villain-section .villain-logo {
 	width: 93%;
 	max-width: 800px;
 }
@@ -282,6 +284,14 @@ body.lb-disable-scrolling {
 @keyframes show {
 	99% {visibility: hidden;}
 	100% {visibility: visible;}
+}
+
+/* Media Queries - 550px */
+
+@media (min-width: 550px) {
+	.villain-section {
+		display: flex;
+	}
 }
 
 /* Media Queries - 750px */
