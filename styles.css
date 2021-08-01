@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: 3.5em;
+	font-size: 3em;
 	text-align: center;
 	padding: 3%;
 	/* Typewriter Effect: https://css-tricks.com/snippets/css/typewriter-effect/ */
@@ -359,7 +359,7 @@ body.lb-disable-scrolling {
 /* footer */
 
 footer {
-	background-color: rgba(0,0,0,.8);
+	background-color: black;
 	margin-top: 30vh;
 }
 
@@ -442,6 +442,22 @@ footer {
 /* Media Queries - 750px */
 
 @media (min-width: 750px) {
+
+	body {
+		background-image: url('images/mobile_background 2.gif');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-size: 3.5em;
+	}
+
 	.icons {
 		display: flex;
 		justify-content: space-around;
@@ -470,6 +486,10 @@ footer {
 	.nav-text {
 		font-size: 1em;
 	}
+
+	footer {
+		margin-top: 10vh;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -479,5 +499,9 @@ footer {
 
 	.nav-text {
 		font-size: 1.5em;
+	}
+
+	body {
+		background-size: 100%;
 	}
 }
