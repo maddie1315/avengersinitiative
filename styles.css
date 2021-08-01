@@ -44,6 +44,10 @@ h3 {
 	animation: typing 2.5s steps(40,end);
 }
 
+h1 {
+	margin-top: 10%;
+}
+
 h4 {
 	font-size: 3em;
 	text-align: center;
@@ -62,6 +66,7 @@ h4 {
 	animation: show 1.3s forwards;
 	visibility: hidden;
 	flex: 1;
+	align-content: center;
 }
 
 /* .villain-section {
@@ -332,26 +337,25 @@ body.lb-disable-scrolling {
 
 .villain-section {
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: column;
-	align-items: center;
 	width: 75%;
 	margin: auto;
 	animation: show 1.3s forwards;
 	visibility: hidden;
 	flex: 1;
-	/* padding-bottom: 50vh; */
+	justify-content: center;
 }
 
 .villain-section div {
 	width: 50%;
 	margin: 0 auto;
-	padding: 5%;
+	padding: 1%;
 }
 
 .villain-section .villain-logo {
 	width: 98%;
 	max-width: 800px;
+	margin: 0 auto;
 }
 
 .villain-logo:hover,
@@ -368,7 +372,12 @@ body.lb-disable-scrolling {
 
 footer {
 	background-color: black;
-	margin-top: 30vh;
+	margin-top: 20%;
+	padding-bottom: 5%;
+}
+
+.v-foot {
+	margin-top: 0;
 }
 
 .nav-menu {
@@ -435,11 +444,25 @@ footer {
 	100% {visibility: visible;}
 }
 
+/* Media Queries - 500px */
+
+@media (min-width: 500px) {
+	footer {
+		margin-top: 3%;
+		padding-bottom: 2%;
+	}
+}
+
 /* Media Queries - 550px */
 
 @media (min-width: 550px) {
 	.villain-section {
-		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.hero-section div {
+		width: 35%;
 	}
 
 	#pswd {
@@ -465,6 +488,10 @@ footer {
 	h5,
 	h6 {
 		font-size: 3.5em;
+	}
+
+	h1 {
+		margin-top: 1%;
 	}
 
 	.icons {
@@ -497,16 +524,46 @@ footer {
 	}
 
 	footer {
-		margin-top: 10vh;
+		padding-bottom: 1%;
 	}
 }
 
 @media (min-width: 1200px) {
+	.hero-section {
+		width: 900px;
+	}
+
+	.villain-section {
+		width: 1200px;
+	}
+
+	.hero-section div {
+		width: 276px;
+	}
+
 	.villain-section div {
 		padding: 3%;
+	}
+
+	footer {
+		padding-bottom: 12px;
+		margin-top: 36px;
+	}
+
+	.nav-menu {
+		max-width: 600px;
+		padding: 24px 0;
 	}
 
 	.nav-text {
 		font-size: 1.5em;
 	}
+
+	.nav-icon {
+		width: 120px;
+	}
+
+	#alogo, #slogo {
+    margin-top: 6px;
+}
 }
