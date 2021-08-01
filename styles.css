@@ -29,19 +29,21 @@ body {
 	background-image: url('images/avenger_screen.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+	flex-direction: column;
+	justify-content: center;
 }
 
 h1,
 h2,
 h3 {
-	font-size: 3em;
+	font-size: 2.6em;
 	text-align: center;
 	padding: 3%;
 	/* Typewriter Effect: https://css-tricks.com/snippets/css/typewriter-effect/ */
 	overflow: hidden;
 	white-space: nowrap;
 	margin: 0 auto;
-	animation: typing 2.5s steps(40,end);
+	animation: typing 3s steps(29,end) 1 normal both;
 }
 
 h1 {
@@ -63,7 +65,8 @@ h4 {
 	align-items: center;
 	width: 75%;
 	margin: auto;
-	animation: show 1.3s forwards;
+	animation: show forwards;
+	animation-delay: 3s;
 	visibility: hidden;
 	flex: 1;
 	align-content: center;
@@ -331,7 +334,8 @@ body.lb-disable-scrolling {
 	flex-direction: column;
 	width: 75%;
 	margin: auto;
-	animation: show 1.3s forwards;
+	animation: show forwards;
+	animation-delay: 3s;
 	visibility: hidden;
 	flex: 1;
 	justify-content: center;
@@ -422,15 +426,16 @@ footer {
 
 @keyframes typing {
 	from {
-		width: 0
+		width: 0;
 	}
 
 	to {
-		width: 100%
+		width: 310px;
 	}
 }
 
 @keyframes show {
+	0% {visibility: hidden;}
 	99% {visibility: hidden;}
 	100% {visibility: visible;}
 }
@@ -438,6 +443,12 @@ footer {
 /* Media Queries - 500px */
 
 @media (min-width: 500px) {
+	h1,
+	h2,
+	h3 {
+		font-size: 3em;
+	}
+
 	footer {
 		margin-top: 3%;
 		padding-bottom: 2%;
