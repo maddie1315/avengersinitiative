@@ -520,6 +520,7 @@ footer {
 @media (min-width: 1200px) {
 	.hero-section {
 		width: 900px;
+		justify-content: center;
 	}
 
 	.villain-section {
