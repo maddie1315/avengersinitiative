@@ -17,9 +17,12 @@ body {
 	background-image: url('images/mobile_background.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 	min-height: 100vh;
 	color: white;
 	font-family: Technology, cursive;
+	display: flex;
+	flex-direction: column;
 }
 
 .login-page {
@@ -30,10 +33,7 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
 	font-size: 3em;
 	text-align: center;
 	padding: 3%;
@@ -42,6 +42,12 @@ h6 {
 	white-space: nowrap;
 	margin: 0 auto;
 	animation: typing 2.5s steps(40,end);
+}
+
+h4 {
+	font-size: 3em;
+	text-align: center;
+	padding: 3%;
 }
 
 /* Hero Page */
@@ -55,6 +61,7 @@ h6 {
 	margin: auto;
 	animation: show 1.3s forwards;
 	visibility: hidden;
+	flex: 1;
 }
 
 /* .villain-section {
@@ -332,6 +339,7 @@ body.lb-disable-scrolling {
 	margin: auto;
 	animation: show 1.3s forwards;
 	visibility: hidden;
+	flex: 1;
 	/* padding-bottom: 50vh; */
 }
 
@@ -445,8 +453,9 @@ footer {
 
 	body {
 		background-image: url('images/mobile_background 2.gif');
-		background-size: contain;
+		background-size: cover;
 		background-repeat: no-repeat;
+		height: 100vh;
 	}
 
 	h1,
@@ -499,9 +508,5 @@ footer {
 
 	.nav-text {
 		font-size: 1.5em;
-	}
-
-	body {
-		background-size: 100%;
 	}
 }
