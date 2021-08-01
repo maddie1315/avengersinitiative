@@ -69,22 +69,13 @@ h4 {
 	align-content: center;
 }
 
-/* .villain-section {
-	width: 75%;
-	margin: auto;
-	animation: show 1.3s forwards;
-	visibility: hidden;
-} */
-
-.hero-section div,
-/* .villain-section div, */
+.hero-section div
 figure {
 	width: 50%;
 	margin: 0 auto;
 }
 
-.hero-section .hero-logo
-/* .villain-section .villain-logo */ {
+.hero-section .hero-logo {
 	width: 93%;
 	max-width: 800px;
 }
@@ -484,9 +475,7 @@ footer {
 	h1,
 	h2,
 	h3,
-	h4,
-	h5,
-	h6 {
+	h4 {
 		font-size: 3.5em;
 	}
 
